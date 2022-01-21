@@ -74,7 +74,7 @@ public class Main {
     private static void parseInput(String[] args) {
         if (args.length < 2) {
             System.out.println("usage: java -jar ShortPayload.jar [gadget-name] [command]");
-            return;
+            System.exit(0);
         } else if (args.length == 3) {
             gadgetName = args[0];
             command = args[1];
